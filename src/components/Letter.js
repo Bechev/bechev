@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Letter.css'
 
 class Letter extends Component {
     constructor(props){
@@ -17,7 +18,7 @@ class Letter extends Component {
     
     render() {
       return (
-        <div>
+        <div className='letter'>
           <h1 style={{color:this.state.letterColor}} onClick={this.changeColor}>{this.props.letter}</h1>
         </div>
       );
