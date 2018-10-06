@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Letter.css'
+import './SiteTitle.css'
 
 class Letter extends Component {
     constructor(props){
         super(props)
         this.state = {
-            letterColor: '#000000'
+            letterColor: '#808080'
         }
     }
 
@@ -18,8 +18,8 @@ class Letter extends Component {
     
     render() {
       return (
-        <div className='letter'>
-          <h1 style={{color:this.state.letterColor}} onClick={this.changeColor}>{this.props.letter}</h1>
+        <div>
+          <h1 className='letter' style={{color:this.state.letterColor}} onClick={this.changeColor}>{this.props.letter}</h1>
         </div>
       );
     }
