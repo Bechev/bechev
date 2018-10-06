@@ -27,7 +27,7 @@ class EGCounter extends Component {
         return (
         <div>
             <h2 className='EGCounter' style={{color:colorStyle}} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            Easter eggs founds: 0/2
+            {/* Easter eggs founds: TBD */}
             </h2>
         </div>
         );
