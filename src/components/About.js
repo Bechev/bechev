@@ -10,6 +10,7 @@ class About extends Component {
   constructor(props){
     super(props)
     this.state = {
+        canHover: true,
         isHovering: false,
         profilePicture: 'black_and_white'
     }
@@ -17,21 +18,25 @@ class About extends Component {
 
   changeProfilePictureColor = () => {
       this.setState({
-        profilePicture: 'alternative'
+        profilePicture: 'alternative',
+        canHover: false
       })
   }
 
   handleMouseEnter = () => {
-    this.setState({
-        isHovering: true
-    })
+    if(this.state.canHover){
+      this.setState({
+          isHovering: true
+      })
+    }
   }
 
   handleMouseLeave = () => {
-    this.setState({
-        isHovering: false
-    })
+      this.setState({
+          isHovering: false
+      })
   }
+
 
   renderProfilePicture = () =>{
     switch(this.state.profilePicture) {
@@ -50,13 +55,20 @@ class About extends Component {
       <Grid>
         <Row >
           <Col xs={12} md={4}>
-            <img src={this.state.isHovering ? profile_picture_color : this.renderProfilePicture()} alt='profile_picture' className="profilePicture" onClick={this.changeProfilePictureColor} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}></img>    
+            <img src={this.state.isHovering ? profile_picture_color : this.renderProfilePicture()} 
+              alt='profile_picture' 
+              className="profilePicture" 
+              onClick={this.changeProfilePictureColor} 
+              onMouseEnter={this.handleMouseEnter} 
+              onMouseLeave={this.handleMouseLeave}>
+            </img>    
           </Col>
           <Col xs={6} md={8}>
             <h1 className='text-left'>About</h1>
             <h3 className='text-left'>Developer, Consultant, Ninja</h3>
           </Col>
         </Row>
+        <br></br>
         <Row>
           <Col xs={12} md={12}>      
             <p className='text-left text-paragraph'>
