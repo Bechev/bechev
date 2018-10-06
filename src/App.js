@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavigationBar from './components/NavigationBar.js'
 import Home from './components/Home.js'
-import Portfolio from './components/Portfolio'
+// import Portfolio from './components/Portfolio'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
 import About from './components/About'

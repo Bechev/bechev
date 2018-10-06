@@ -1,4 +1,8 @@
 .text-left{
+    text-align: left;
+}
+
+.text-paragraph{
     font-size: 1.5em;
     text-align: left;
     margin-left: 3em;
@@ -11,4 +15,9 @@
 
 .whisper{
     font-size: 0.5em;
+}
+
+.profilePicture{
+    height: 200px;
+    border-radius: 10%
 }
