@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './EGCounter.css';
+import './SiteTitle';
 
 class EGCounter extends Component {
 
@@ -23,7 +23,7 @@ class EGCounter extends Component {
     }
 
     render() {
-        const colorStyle = this.state.isHovering ? '#808080' : '#ffffff' 
+        const colorStyle = this.state.isHovering ? '#F0F0F0' : '#ffffff' 
         return (
         <div>
             <h2 className='EGCounter' style={{color:colorStyle}} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
