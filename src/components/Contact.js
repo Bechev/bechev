@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Grid,Row, Col} from 'react-bootstrap'
+import { connect } from 'react-redux'
+import {turnLightsOn, turnLightsOff } from '../actions/easterEggs'
 import dev from '../assets/images/logos/dev.png'
 import devGrey from '../assets/images/logos/dev-grey.png'
 import email from '../assets/images/logos/email.png'
@@ -37,32 +39,32 @@ class Contact extends Component {
           <Row className="show-grid">
             <Col xs={6} md={2}>
               <a href="https://github.com/Bechev" target="_blank" rel="noopener noreferrer">
-                <img src={this.state.colorsOn ? github : githubGrey} alt='github-logo-grey' height="100"></img>
+               <img src={this.props.easterEggs.lights.lightsOn ? github : githubGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xs={6} md={2}>
               <a href="https://twitter.com/bechev" target="_blank" rel="noopener noreferrer">
-                <img src={this.state.colorsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
+                <img src={this.props.easterEggs.lights.lightsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xsHidden md={2}>
               <a href="https://www.instagram.com/bechev_/" target="_blank" rel="noopener noreferrer">
-                <img src={this.state.colorsOn ? instagram : instagramGrey} alt='github-logo-grey' height="100"></img>
+                <img src={this.props.easterEggs.lights.lightsOn ? instagram : instagramGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xs={6} md={2}>
               <a href="mailto:placeholder@gmail.com">
-                <img src={this.state.colorsOn ? email : emailGrey} alt='github-logo-grey' height="100"></img>
+                <img src={this.props.easterEggs.lights.lightsOn ? email : emailGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xs={6} md={2}>
               <a href="https://dev.to/bechev/" target="_blank" rel="noopener noreferrer">
-                <img src={this.state.colorsOn ? dev : devGrey} alt='github-logo-grey' height="100"></img>
+                <img src={this.props.easterEggs.lights.lightsOn ? dev : devGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xsHidden md={2}>
               <a href="https://www.linkedin.com/in/bertrandchevalierdethevenard/" target="_blank" rel="noopener noreferrer">
-                <img src={this.state.colorsOn ? linkedin : linkedinGrey} alt='github-logo-grey' height="100"></img>
+                <img src={this.props.easterEggs.lights.lightsOn ? linkedin : linkedinGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
           </Row>
@@ -72,4 +74,18 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+const mapStateToProps = state => {
+  return {
+    easterEggs: state.easterEggs
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+      return {
+        turnLightsOn: (easterEgg) => dispatch(turnLightsOn(easterEgg)),
+        turnLightsOff: (easterEgg) => dispatch(turnLightsOff(easterEgg)),
+      }
+}
+    
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);
+

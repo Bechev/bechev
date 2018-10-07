@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SiteTitle from './SiteTitle'
 import EGCounter from './EGCounter'
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
+import { connect } from 'react-redux'
+import {turnLightsOn, turnLightsOff } from '../actions/easterEggs'
 import github from '../assets/images/logos/github-grey.png'
 import twitter from '../assets/images/logos/twitter-grey.png'
 import instagram from '../assets/images/logos/instagram-grey.png'
@@ -39,10 +41,12 @@ class NavigationBar extends Component {
   
   toggleIcon = () => {
     if(this.state.isLampOn) {
+      this.props.turnLightsOff()
       this.setState({
         isLampOn: false
       })
     } else {
+      this.props.turnLightsOn()
       this.setState({
         isLampOn: true
       })
@@ -100,4 +104,18 @@ class NavigationBar extends Component {
   }
 }
 
-export default NavigationBar;
+
+const mapStateToProps = state => {
+  return {
+    easterEggs: state.easterEggs
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+      return {
+        turnLightsOn: () => dispatch(turnLightsOn()),
+        turnLightsOff: () => dispatch(turnLightsOff()),
+      }
+}
+    
+export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);

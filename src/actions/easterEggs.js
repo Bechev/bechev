@@ -1,15 +1,24 @@
 
-export function activateEasterEgg(){
-    return (dispatch) => {
-    }
+export function turnLightsOn(){
+    return {
+        type: 'TURN_LIGHTS_ON',
+        // payload: true
+    };
 };
 
-export function removeItem(){
-    return (dispatch) => {
-    }
+export function turnLightsOff(){
+    return {
+        type: 'TURN_LIGHTS_OFF',
+        // payload: false
+    };
 }
 
-export function fetchItems(){
-    return(dispatch) =>{
-}
+export function activateEasterEgg(easterEgg){
+    return {
+        type: 'ACTIVATE_EASTEREGG',
+        // payload: true
+    };
+};
+
+
 
