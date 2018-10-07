@@ -16,11 +16,18 @@ class About extends Component {
     }
   }
 
-  changeProfilePictureColor = () => {
+  toggleProfilePictureImage = () => {
+    if(this.state.canHover) {
       this.setState({
         profilePicture: 'alternative',
         canHover: false
       })
+    } else {
+      this.setState({
+        profilePicture: 'black_and_white',
+        canHover: true
+      })
+    }
   }
 
   handleMouseEnter = () => {
@@ -57,7 +64,7 @@ class About extends Component {
             <img src={this.state.isHovering ? profile_picture_color : this.renderProfilePicture()} 
               alt='profile_picture' 
               className="profilePicture" 
-              onClick={this.changeProfilePictureColor} 
+              onClick={this.toggleProfilePictureImage} 
               onMouseEnter={this.handleMouseEnter} 
               onMouseLeave={this.handleMouseLeave}>
             </img>    

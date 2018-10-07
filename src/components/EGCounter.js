@@ -23,11 +23,11 @@ class EGCounter extends Component {
     }
 
     render() {
-        const colorStyle = this.state.isHovering ? '#F0F0F0' : '#ffffff' 
+        const colorStyle = this.state.isHovering ? '#808080' : '#ffffff' 
         return (
         <div>
             <h2 className='EGCounter' style={{color:colorStyle}} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            {/* Easter eggs founds: TBD */}
+            Easter eggs found: TBD
             </h2>
         </div>
         );

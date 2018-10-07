@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Grid,Row, Col} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
 import dev from '../assets/images/logos/dev.png'
 import devGrey from '../assets/images/logos/dev-grey.png'
 import email from '../assets/images/logos/email.png'
@@ -23,8 +22,7 @@ class Contact extends Component {
     }
   }
 
-
-    render() {
+  render() {
     return (
       <div className="Contact">
         <Grid>
@@ -37,42 +35,18 @@ class Contact extends Component {
             </Col>
           </Row>
           <Row className="show-grid">
-          {/* <Col xs={6} md={12}>
-            <Navbar>
-              <Nav>
-                <NavItem href="https://github.com/Bechev" target="_blank">
-                  <img src={this.state.colorsOn ? github : githubGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-                <NavItem href="https://twitter.com/bechev" target="_blank">
-                  <img src={this.state.colorsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-                <NavItem href="https://www.instagram.com/bechev_/" target="_blank">
-                  <img src={this.state.colorsOn ? instagram : instagramGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-                <NavItem href="mailto:bertrand.chevalier@gmail.com" target="_blank">
-                  <img src={this.state.colorsOn ? email : emailGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-                <NavItem href="https://dev.to/bechev/" target="_blank">
-                  <img src={this.state.colorsOn ? dev : devGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-                <NavItem href="https://www.linkedin.com/in/bertrandchevalierdethevenard/" target="_blank">
-                  <img src={this.state.colorsOn ? linkedin : linkedinGrey} alt='github-logo-grey' height="100"></img>
-                </NavItem>
-              </Nav>
-            </Navbar>
-          </Col> */}
             <Col xs={6} md={2}>
-              <a href="https://github.com/Bechev" target="_blank">
+              <a href="https://github.com/Bechev" target="_blank" rel="noopener noreferrer">
                 <img src={this.state.colorsOn ? github : githubGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xs={6} md={2}>
-              <a href="https://twitter.com/bechev" target="_blank">
+              <a href="https://twitter.com/bechev" target="_blank" rel="noopener noreferrer">
                 <img src={this.state.colorsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xsHidden md={2}>
-              <a href="https://www.instagram.com/bechev_/" target="_blank">
+              <a href="https://www.instagram.com/bechev_/" target="_blank" rel="noopener noreferrer">
                 <img src={this.state.colorsOn ? instagram : instagramGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
@@ -82,12 +56,12 @@ class Contact extends Component {
               </a>
             </Col>
             <Col xs={6} md={2}>
-              <a href="https://dev.to/bechev/" target="_blank">
+              <a href="https://dev.to/bechev/" target="_blank" rel="noopener noreferrer">
                 <img src={this.state.colorsOn ? dev : devGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
             <Col xsHidden md={2}>
-              <a href="https://www.linkedin.com/in/bertrandchevalierdethevenard/" target="_blank">
+              <a href="https://www.linkedin.com/in/bertrandchevalierdethevenard/" target="_blank" rel="noopener noreferrer">
                 <img src={this.state.colorsOn ? linkedin : linkedinGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
