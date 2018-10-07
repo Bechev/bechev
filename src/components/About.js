@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap'
 import profile_picture_bw from '../assets/images/profile-picture-black_and_white.jpg'
 import profile_picture_color from '../assets/images/profile-picture-color.jpg'
-import profile_picture_alternative from '../assets/images/profile-picture-alternative.jpg'
+import profile_picture_alternative from '../assets/images/profile-picture-alternative.jpeg'
 import './About.css'
 
 class About extends Component {
@@ -36,7 +36,6 @@ class About extends Component {
           isHovering: false
       })
   }
-
 
   renderProfilePicture = () =>{
     switch(this.state.profilePicture) {
@@ -92,6 +91,12 @@ class About extends Component {
                 <p>
                   Specialized in the financial industry, I have been working as a <b>management consultant</b> for ~7 years. I am <b>solving strategic and organizational problems</b> for my clients executing both data-driven and qualitative analysis.
                   I am leveraging those years of problem solvings to propose tailor-made and easy to execute solutions.
+                </p>
+              </li>
+              <br></br>
+              <li><span className="li">The Ninja life:</span>
+                <p>
+                  That's just a joke...
                 </p>
               </li>
             </ul>

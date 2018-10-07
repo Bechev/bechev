@@ -4,7 +4,7 @@ import EGCounter from './EGCounter'
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
 import github from '../assets/images/logos/github-grey.png'
 import twitter from '../assets/images/logos/twitter-grey.png'
-import instagram from '../assets/images/logos/Instagram-grey.png'
+import instagram from '../assets/images/logos/instagram-grey.png'
 import dev from '../assets/images/logos/dev-grey.png'
 import './NavigationBar.css'
 
