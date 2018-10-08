@@ -52,7 +52,7 @@ class Contact extends Component {
               </a>
             </Col>
             <Col xs={6} md={2}>
-              <a href="mailto:placeholder@gmail.com">
+              <a href="mailto:contact.bechev@gmail.com">
                 <img src={this.props.easterEggs.lights.lightsOn ? email : emailGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>

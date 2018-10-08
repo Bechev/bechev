@@ -25,11 +25,11 @@ class EGCounter extends Component {
     }
 
     render() {
-        const colorStyle = this.state.isHovering ? '#808080' : '#ffffff' 
+        const colorStyle = this.state.isHovering ? '#E0E0E0' : '#ffffff' 
         return (
         <div>
             <h2 className='EGCounter' style={{color:colorStyle}} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            Total easter eggs: {Object.keys(this.props.easterEggs).length}
+            Discover the {Object.keys(this.props.easterEggs).length} easter eggs hidden in the website
             </h2>
         </div>
         );

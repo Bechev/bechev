@@ -1,0 +1,52 @@
+.text-left{
+    text-align: left;
+}
+
+.text-grey{
+    color: #808080
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-middle{
+    text-align: center;
+}
+
+.text-big{
+    font-size: 3em;
+}
+
+.text-normal{
+    font-size: 1.5em;
+}
+
+.text-paragraph{
+    text-align: left;
+}
+
+.li{
+    font-weight: bold;
+}
+
+.whisper{
+    font-size: 0.5em;
+}
+
+.margin-right{
+    margin-right: 3em;
+}
+
+.margin-left{
+    margin-left: 3em;
+}
+
+.wide-margin-right{
+    margin-right: 20em;
+}
+
+.profilePicture{
+    height: 150px;
+    border-radius: 10%
+}

@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
+import {Navbar, Nav, NavItem} from 'react-bootstrap'
 import SiteTitle from './SiteTitle'
 import EGCounter from './EGCounter'
 import Lamp from './Lamp'
-import {Navbar, Nav, NavItem} from 'react-bootstrap'
-import { connect } from 'react-redux'
-import {NavLink} from 'react-router-dom'
-import {turnLightsOn, turnLightsOff, activateEasterEgg } from '../actions/easterEggs'
 import github from '../assets/images/logos/github-grey.png'
 import twitter from '../assets/images/logos/twitter-grey.png'
 import instagram from '../assets/images/logos/instagram-grey.png'
-import lampGrey from '../assets/images/logos/lamp-grey.png'
-import lamp from '../assets/images/logos/lamp.png'
 import dev from '../assets/images/logos/dev-grey.png'
 import './NavigationBar.css'
 
@@ -32,9 +27,9 @@ class NavigationBar extends Component {
           <NavItem eventKey={1} href="portfolio">
             Portfolio
           </NavItem>
-          <NavItem eventKey={2} href="blog">
+          {/* <NavItem eventKey={2} href="blog">
             Blog
-          </NavItem>
+          </NavItem> */}
           <NavItem eventKey={3} href="contact">
             Contact
           </NavItem>

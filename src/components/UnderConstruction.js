@@ -18,7 +18,7 @@ class UnderConstruction extends Component {
 
   incrementEiffelTowerConstruction = () => {
     this.props.activateEasterEgg('underConstruction')
-    if(this.state.construction_step!=3){
+    if(this.state.construction_step !== 3){
       this.setState ({
         construction_step: this.state.construction_step + 1
       })
