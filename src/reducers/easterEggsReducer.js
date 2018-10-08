@@ -1,9 +1,21 @@
 export default function easterEggsReducer(
     state = {
+        titleColors:{
+            activated: false,
+        },
+        easterEggCounter:{
+            activated: false,
+        },
         lights:{
             lightsOn: false,
             activated: false,
-        }
+        },
+        profilePictureHovered:{
+            activated: false,
+        },
+        profilePictureClicked:{
+            activated: false,
+        },
     }
 , action) {
 
@@ -11,15 +23,13 @@ export default function easterEggsReducer(
 
         case 'TURN_LIGHTS_ON':
             return ({...state, lights: {...state.lights, lightsOn: true}})
-            // return  [].concat(state, action.payload)
         
         case 'TURN_LIGHTS_OFF':
             return ({...state, lights: {...state.lights, lightsOn: false}})
-            // return state.filter((val) => val.id !== action.payload.id)
 
         case 'ACTIVATE_EASTEREGG':
-            return state
-            // return state.filter((val) => val.id !== action.payload.id)
+            console.log(action.payload)
+            return ({...state, [action.payload]: {...state[action.payload], activated: true}})
         
         default:
             return state;

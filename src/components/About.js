@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Grid, Row, Col} from 'react-bootstrap'
+import {activateEasterEgg} from '../actions/easterEggs'
+import { connect } from 'react-redux'
 import profile_picture_bw from '../assets/images/profile-picture-black_and_white.jpg'
 import profile_picture_color from '../assets/images/profile-picture-color.jpg'
 import profile_picture_alternative from '../assets/images/profile-picture-alternative.jpeg'
@@ -17,6 +19,7 @@ class About extends Component {
   }
 
   toggleProfilePictureImage = () => {
+    this.props.activateEasterEgg('profilePictureClicked')
     if(this.state.canHover) {
       this.setState({
         profilePicture: 'alternative',
@@ -31,6 +34,7 @@ class About extends Component {
   }
 
   handleMouseEnter = () => {
+    this.props.activateEasterEgg('profilePictureHovered')
     if(this.state.canHover){
       this.setState({
           isHovering: true
@@ -118,4 +122,18 @@ class About extends Component {
   }
 }
 
-export default About;
+
+
+const mapStateToProps = state => {
+  return {
+    easterEggs: state.easterEggs
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+      return {
+        activateEasterEgg: (easterEgg) => dispatch(activateEasterEgg(easterEgg)),
+      }
+}
+    
+export default connect(mapStateToProps, mapDispatchToProps)(About);

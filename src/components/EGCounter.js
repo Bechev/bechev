@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './SiteTitle';
+import {connect} from 'react-redux'
+import {activateEasterEgg} from '../actions/easterEggs'
 
 class EGCounter extends Component {
 
@@ -11,6 +12,7 @@ class EGCounter extends Component {
     }
 
     handleMouseEnter = () => {
+        this.props.activateEasterEgg('easterEggCounter')
         this.setState({
             isHovering: true
         })
@@ -34,4 +36,17 @@ class EGCounter extends Component {
     }
 }
 
-export default EGCounter;
+const mapStateToProps = state => {
+    return {
+      easterEggs: state.easterEggs
+    }
+  }
+  
+  const mapDispatchToProps = dispatch => {
+        return {
+          activateEasterEgg: (easterEgg) => dispatch(activateEasterEgg(easterEgg)),
+        }
+  }
+      
+  export default connect(mapStateToProps, mapDispatchToProps)(EGCounter);
+  

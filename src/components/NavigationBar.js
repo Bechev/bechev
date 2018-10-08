@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import SiteTitle from './SiteTitle'
 import EGCounter from './EGCounter'
+import Lamp from './Lamp'
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
 import { connect } from 'react-redux'
-import {turnLightsOn, turnLightsOff } from '../actions/easterEggs'
+import {NavLink} from 'react-router-dom'
+import {turnLightsOn, turnLightsOff, activateEasterEgg } from '../actions/easterEggs'
 import github from '../assets/images/logos/github-grey.png'
 import twitter from '../assets/images/logos/twitter-grey.png'
 import instagram from '../assets/images/logos/instagram-grey.png'
@@ -13,45 +15,6 @@ import dev from '../assets/images/logos/dev-grey.png'
 import './NavigationBar.css'
 
 class NavigationBar extends Component {
-  
-  constructor(props){
-    super(props)
-    this.state = {
-        isLampOn: false
-    }
-  }
-
-  renderLamp = () => {
-    if(window.location.pathname==='/Contact'){
-      if(this.state.isLampOn){
-        return(
-          <div>
-            <img src={lamp} alt='lamp' height="25" width="25"></img>
-          </div>
-        )
-      }else{
-        return(
-          <div>
-            <img src={lampGrey} alt='lamp' height="25" width="25"></img>
-          </div>
-        )
-      }
-    }
-  }
-  
-  toggleIcon = () => {
-    if(this.state.isLampOn) {
-      this.props.turnLightsOff()
-      this.setState({
-        isLampOn: false
-      })
-    } else {
-      this.props.turnLightsOn()
-      this.setState({
-        isLampOn: true
-      })
-    }
-  }
 
   render() {
     return (
@@ -66,16 +29,16 @@ class NavigationBar extends Component {
           <NavItem eventKey={1} href="/">
             Home
           </NavItem>
-          {/* <NavItem eventKey={1} href="Portfolio">
+          <NavItem eventKey={1} href="portfolio">
             Portfolio
-          </NavItem> */}
-          <NavItem eventKey={2} href="Blog">
+          </NavItem>
+          <NavItem eventKey={2} href="blog">
             Blog
           </NavItem>
-          <NavItem eventKey={3} href="Contact">
+          <NavItem eventKey={3} href="contact">
             Contact
           </NavItem>
-          <NavItem eventKey={4} href="About">
+          <NavItem eventKey={4} href="about">
             About
           </NavItem>
         </Nav>
@@ -93,8 +56,8 @@ class NavigationBar extends Component {
           <NavItem href="https://dev.to/bechev/" target="_blank" rel="noopener noreferrer">
             <img src={dev} alt='dev-logo-grey' height="25" width="42.5"></img>
           </NavItem>
-          <NavItem onClick={this.toggleIcon}>
-            {this.renderLamp()}
+          <NavItem>
+            <Lamp/>
           </NavItem>
         </Nav>
         <EGCounter/>
@@ -104,18 +67,4 @@ class NavigationBar extends Component {
   }
 }
 
-
-const mapStateToProps = state => {
-  return {
-    easterEggs: state.easterEggs
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-      return {
-        turnLightsOn: () => dispatch(turnLightsOn()),
-        turnLightsOff: () => dispatch(turnLightsOff()),
-      }
-}
-    
-export default connect(mapStateToProps, mapDispatchToProps)(NavigationBar);
+export default NavigationBar;

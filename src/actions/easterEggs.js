@@ -16,7 +16,7 @@ export function turnLightsOff(){
 export function activateEasterEgg(easterEgg){
     return {
         type: 'ACTIVATE_EASTEREGG',
-        // payload: true
+        payload: easterEgg,
     };
 };
 

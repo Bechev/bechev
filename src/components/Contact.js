@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Grid,Row, Col} from 'react-bootstrap'
 import { connect } from 'react-redux'
-import {turnLightsOn, turnLightsOff } from '../actions/easterEggs'
 import dev from '../assets/images/logos/dev.png'
 import devGrey from '../assets/images/logos/dev-grey.png'
 import email from '../assets/images/logos/email.png'
@@ -80,12 +79,5 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-      return {
-        turnLightsOn: (easterEgg) => dispatch(turnLightsOn(easterEgg)),
-        turnLightsOff: (easterEgg) => dispatch(turnLightsOff(easterEgg)),
-      }
-}
-    
-export default connect(mapStateToProps, mapDispatchToProps)(Contact);
+export default connect(mapStateToProps)(Contact);
 
