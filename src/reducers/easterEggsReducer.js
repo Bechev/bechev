@@ -16,6 +16,9 @@ export default function easterEggsReducer(
         profilePictureClicked:{
             activated: false,
         },
+        underConstruction:{
+            activated: false,
+        },
     }
 , action) {
 
