@@ -29,7 +29,7 @@ class EGCounter extends Component {
         return (
         <div>
             <h2 className='EGCounter' style={{color:colorStyle}} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            Easter eggs found: TBD
+            Total easter eggs: {Object.keys(this.props.easterEggs).length}
             </h2>
         </div>
         );
