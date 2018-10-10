@@ -28,7 +28,7 @@ class Contact extends Component {
       <div className="Contact">
         <Grid>
           <Row className="show-grid">
-            <Col xs={12} md={12}>
+            <Col xs={6} md={12}>
               <h1>Contact</h1>
               <br></br>
               <br></br>
@@ -46,7 +46,7 @@ class Contact extends Component {
                 <img src={this.props.easterEggs.lights.lightsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
-            <Col xsHidden md={2}>
+            <Col xs={6} md={2}>
               <a href="https://www.instagram.com/bechev_/" target="_blank" rel="noopener noreferrer">
                 <img src={this.props.easterEggs.lights.lightsOn ? instagram : instagramGrey} alt='github-logo-grey' height="100"></img>
               </a>
@@ -61,13 +61,13 @@ class Contact extends Component {
                 <img src={this.props.easterEggs.lights.lightsOn ? dev : devGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
-            <Col xsHidden md={2}>
+            <Col xs={6} md={2}>
               <a href="https://www.linkedin.com/in/bertrandchevalierdethevenard/" target="_blank" rel="noopener noreferrer">
                 <img src={this.props.easterEggs.lights.lightsOn ? linkedin : linkedinGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>
           </Row>
-        </Grid>;
+        </Grid>
       </div>
     );
   }

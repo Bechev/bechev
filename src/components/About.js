@@ -88,7 +88,7 @@ class About extends Component {
             <ul className='text-left text-normal'>
               <li ><span className="li">The Developer life:</span>
                 <p>
-                  Long-time tech enthusiat, I decided to scale-up a hobby to a skill. I am a full-stack web-developer.
+                  Long-time tech enthusiast, I decided to scale-up a hobby to a skill. I am a full-stack web-developer.
                   I graduated from the <a href='https://flatironschool.com/'>Flatiron School</a>.
                   I currently focus on exploring React as a front-end framework. I worked with <b>Ruby on Rails, C++, Java, SQL</b>. 
                   As I learn, I write about it in my blog and try to keep a learning path through <b>daily katas that I publish on twitter</b>. 
