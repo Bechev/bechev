@@ -82,16 +82,15 @@ class About extends Component {
         <Row>
           <Col xs={12} md={12}>      
             <p className='text-left  text-normal'>
-              Consultant during the day, I transform into a software developer at night. I am a fast learner and passionate problem-solver.
+              I'm consultant during the day, I transform into a software developer at night. I am a fast learner and passionate problem-solver.
             </p>
             <br></br>
             <ul className='text-left text-normal'>
               <li ><span className="li">The Developer life:</span>
                 <p>
                   Long-time tech enthusiast, I decided to scale-up a hobby to a skill. I am a full-stack web-developer.
-                  I graduated from the <a href='https://flatironschool.com/'>Flatiron School</a>.
-                  I currently focus on exploring React as a front-end framework. I worked with <b>Ruby on Rails, C++, Java, SQL</b>. 
-                  As I learn, I write about it in my blog and try to keep a learning path through <b>daily katas that I publish on twitter</b>. 
+                  I graduated from the <a href='https://flatironschool.com/'>Flatiron School</a>, and I currently focus on exploring React as a front-end framework. I've worked with <b>Ruby on Rails, C++, Java, SQL</b>. 
+                  I like to write about what I'm learning on my blog, and try to keep myself sharp through doing <b>daily katas that I publish on twitter</b>. 
                   <span className='whisper'> 
                     {" "} (Follow me <a href='https://twitter.com/bechev' target="_blank" rel="noopener noreferrer">here</a>), say hi and public shame me when I don't post!
                   </span> 
@@ -100,8 +99,8 @@ class About extends Component {
               <br></br>
               <li><span className="li">The Consulting life:</span>
                 <p>
-                  Specialized in the financial industry, I have been working as a <b>management consultant</b> for ~7 years. I am <b>solving strategic and organizational problems</b> for my clients executing both data-driven and qualitative analysis.
-                  I am leveraging those years of problem solvings to propose tailor-made and easy to execute solutions.
+                  With a specialization in the financial industry, I have been working as a <b>management consultant</b> for ~7 years. I <b>solve strategic and organizational problems</b> for my clients executing both data-driven and qualitative analysis.
+                  I have been leveraging those years of problem solving experience to create tailor-made, and easy to execute solutions for my clients.
                 </p>
               </li>
               <br></br>
