@@ -93,16 +93,15 @@ class About extends Component {
                         <br></br>
                         <li>
                             I graduated from the <a href='https://flatironschool.com/'><b>Flatiron School</b></a> in 2018.
-                            Since then I built a few Web App. For example, I created a <a href='https://lightnino.herokuapp.com/'><b>BlackJack game</b></a> 
-                            <i>(click on BlackJack in the NavBar to play).</i>
-                            <b> I am now working now on a meal planning webapp</b>, offering recipes with local and seasonal produce only. 
+                            Since then I built a few Web App. I created a <a href='https://lightnino.herokuapp.com/'><b>BlackJack game</b></a> 
+                             I am now working now on a <b>meal planning webapp</b>, offering recipes with local and seasonal produce only. 
                             An easy way to reduce our carbon footprint without even thinking about it! 
                             <i> If you like the idea, <a href="mailto:contact.bechev@gmail.com">please reach out!</a> 
-                             I am looking for some help for the design and helping me with adding features.</i>
+                             I am looking for some help on the design and adding features.</i>
                         </li><br></br>
                         <li>
-                            I got myself interested in <b>Cryptocurrencies</b> and attended the <b> Buidlbootcamp</b>,
-                             where I went deep in the mechanics of bitcoin by rebuilding bit by bit a light version of the protcol.<br></br>
+                            I got myself interested in <b>Cryptocurrencies</b> and took online classes where I went deep in the mechanics of 
+                            Bitcoin by rebuilding bit by bit a light version of the protcol in Python.<br></br>
                         </li><br></br>
                         <li>
                             I got an internal Data Science certification from my day job where I took many online classes using various technologies, 
