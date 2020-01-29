@@ -42,7 +42,7 @@ class Contact extends Component {
               </a>
             </Col>
             <Col xs={6} md={2}>
-              <a href="https://twitter.com/bechev" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/bct_here" target="_blank" rel="noopener noreferrer">
                 <img src={this.props.easterEggs.lights.lightsOn ? twitter : twitterGrey} alt='github-logo-grey' height="100"></img>
               </a>
             </Col>

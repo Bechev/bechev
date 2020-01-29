@@ -4,7 +4,7 @@ import {activateEasterEgg} from '../actions/easterEggs'
 import { connect } from 'react-redux'
 import profile_picture_bw from '../assets/images/profile-picture-black_and_white.jpg'
 import profile_picture_color from '../assets/images/profile-picture-color.jpg'
-import profile_picture_alternative from '../assets/images/profile-picture-alternative.jpeg'
+import profile_picture_alternative from '../assets/images/profile-picture-alternative.jpg'
 import './AppFormating.css'
 
 class About extends Component {
@@ -75,7 +75,7 @@ class About extends Component {
           </Col>
           <Col xs={6} md={8}>
             <h1 className='text-left'>About</h1>
-            <h3 className='text-left'>Developer, Consultant, Ninja</h3>
+            <h3 className='text-left'>Software Developer, Consultant</h3>
           </Col>
         </Row>
         <br></br>
@@ -88,12 +88,28 @@ class About extends Component {
             <ul className='text-left text-normal'>
               <li ><span className="li">The Developer life:</span>
                 <p>
-                  Long-time tech enthusiast, I decided to scale-up a hobby to a skill. I am a full-stack web-developer.
-                  I graduated from the <a href='https://flatironschool.com/'>Flatiron School</a>, and I currently focus on exploring React as a front-end framework. I've worked with <b>Ruby on Rails, C++, Java, SQL</b>. 
-                  I like to write about what I'm learning on my blog, and try to keep myself sharp through doing <b>daily katas that I publish on twitter</b>. 
-                  <span className='whisper'> 
-                    {" "} (Follow me <a href='https://twitter.com/bechev' target="_blank" rel="noopener noreferrer">here</a>), say hi and public shame me when I don't post!
-                  </span> 
+                    Long-time tech enthusiast, I decided to scale-up a hobby to a skill. I am a full-stack web-developer and exploring different type of technologies:
+                    <ul>
+                        <br></br>
+                        <li>
+                            I graduated from the <a href='https://flatironschool.com/'><b>Flatiron School</b></a> in 2018.
+                            Since then I built a few Web App. For example, I created a <a href='https://lightnino.herokuapp.com/'><b>BlackJack game</b></a> 
+                            <i>(click on BlackJack in the NavBar to play).</i>
+                            <b> I am now working now on a meal planning webapp</b>, offering recipes with local and seasonal produce only. 
+                            An easy way to reduce our carbon footprint without even thinking about it! 
+                            <i> If you like the idea, <a href="mailto:contact.bechev@gmail.com">please reach out!</a> 
+                             I am looking for some help for the design and helping me with adding features.</i>
+                        </li><br></br>
+                        <li>
+                            I got myself interested in <b>Cryptocurrencies</b> and attended the <b> Buidlbootcamp</b>,
+                             where I went deep in the mechanics of bitcoin by rebuilding bit by bit a light version of the protcol.<br></br>
+                        </li><br></br>
+                        <li>
+                            I got an internal Data Science certification from my day job where I took many online classes using various technologies, 
+                            programing languages and libraries (R, Python, Pandas, Numpy).
+                        </li>
+                    </ul>
+                    
                 </p>
               </li>
               <br></br>
@@ -101,12 +117,6 @@ class About extends Component {
                 <p>
                   With a specialization in the financial industry, I have been working as a <b>management consultant</b> for ~7 years. I <b>solve strategic and organizational problems</b> for my clients executing both data-driven and qualitative analysis.
                   I have been leveraging those years of problem solving experience to create tailor-made, and easy to execute solutions for my clients.
-                </p>
-              </li>
-              <br></br>
-              <li><span className="li">The Ninja life:</span>
-                <p>
-                  That's just a joke...
                 </p>
               </li>
             </ul>

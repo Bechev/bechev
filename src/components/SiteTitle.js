@@ -6,7 +6,7 @@ class SiteTitle extends Component {
     constructor(props){
         super(props)
         this.state = {
-            siteTitle: ['b','e','c','h','e','v','.','i','o']
+            siteTitle: ['b','e','r','t','r','a','n','d','.','c','h','e','v','a','l','i','e','r','.','c','o','m']
         }
     }
 

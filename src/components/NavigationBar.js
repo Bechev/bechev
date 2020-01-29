@@ -36,13 +36,16 @@ class NavigationBar extends Component {
           <NavItem eventKey={4} href="about">
             About
           </NavItem>
+          {/* <NavItem eventKey={4} href="under_construction">
+            Under Construction
+          </NavItem> */}
         </Nav>
         
         <Nav className='social-networks'>
           <NavItem href="https://github.com/Bechev" target="_blank" rel="noopener noreferrer">
             <img src={github} alt='github-logo-grey' height="25" width="25"></img>
           </NavItem>
-          <NavItem href="https://twitter.com/bechev" target="_blank" rel="noopener noreferrer">
+          <NavItem href="https://twitter.com/bct_here" target="_blank" rel="noopener noreferrer">
             <img src={twitter} alt='twitter-logo-grey' height="25" width="25"></img>
           </NavItem>
           <NavItem href="https://www.instagram.com/bechev_/" target="_blank" rel="noopener noreferrer">

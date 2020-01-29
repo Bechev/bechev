@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import UnderConstruction from './components/UnderConstruction.js';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             {/* <Route exact path="/blog" component={Blog} /> */}
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/under_construction" component={UnderConstruction} />
           </React.Fragment>
         </BrowserRouter>
       </div>
